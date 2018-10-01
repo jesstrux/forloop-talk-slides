@@ -1,0 +1,102 @@
+@font-face{
+  font-family: 'Droid Serif';
+  src: url('fonts/DroidSerif-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: 'Droid Serif';
+  src: url('fonts/DroidSerif-Italic.ttf');
+  font-style: italic;
+}
+
+@font-face{
+  font-family: 'Droid Serif';
+  src: url('fonts/DroidSerif-BoldItalic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+@font-face{
+  font-family: 'Ubuntu Mono';
+  src: url('fonts/UbuntuMono-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: 'Ubuntu Mono';
+  src: url('fonts/UbuntuMono-Italic.ttf');
+  font-style: italic;
+}
+
+@font-face{
+  font-family: 'Ubuntu Mono';
+  src: url('fonts/UbuntuMono-BoldItalic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+@font-face{
+  font-family: 'Yanone Kaffeesatz';
+  src: url('fonts/YanoneKaffeesatz-Regular.ttf');
+  font-weight: normal;
+}
+
+
+/*SLIDES CSS*/
+body { font-family: 'Droid Serif'; }
+h1, h2, h3 {
+  font-family: 'Yanone Kaffeesatz';
+  font-weight: normal;
+}
+.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+.dark{
+  background: #252527;
+  color: #fff
+}
+
+.has-quote em{
+  font-size: 1.2em;
+  line-height: 2.2em;
+  color: #ccc;
+}
+
+.has-quote em:before{
+  content: open-quote " ";
+}
+
+.has-quote em:after{
+  content:  " " close-quote;
+}
+
+.has-quote .not-quote em:before{
+  content: "";
+}
+
+.has-quote .not-quote  em:after{
+  content:  "";
+}
+
+.grid{
+  display: grid;
+  /*grid-gap: 1em;*/
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(226.1px, auto);
+}
+
+.grid img{
+  display: block;
+  width: 85%;
+  margin-top: 0.6em;
+}
+
+.demo img{
+  width: 750px;
+  margin-top: 20px;
+  display: block;
+}
