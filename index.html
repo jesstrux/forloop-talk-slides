@@ -7,46 +7,44 @@
   </head>
   <body>
     <textarea id="source">
-      class: center, middle, dark, has-quote
+      class: center, middle, dark
 
       # The progressive in PWAs
-      .not-quote[*Or: progressively enhancing your web apps into PWAs*]
+      
+      *---- OR ----*
+      
+      *Progressively enhancing your web apps into PWAs*
 
       ---
 
       class: center, middle
 
       # Who am i?
+
+      *Name's* Walter
       
       Front end developer *@ipfsoftwares*
 
-      (see what I did there?😎)
+      ( *see what I did there?*😎)
 
-      *@jesstrux* on github 
-      
-      *@jestrux* on twitter
+      *@jestrux* on github and twitter
 
 
       ---
 
-      class: center, middle
+      class: center, middle, center-text
 
       ## Javascript enthusiast
 
-      ....loosely translates to *world class procrastinator* 
-      <!-- 😉😊 -->
+      Card trick in **Angular 1**
 
-      ### Started but never finished:
+      Letterpress clone in **Polymer**
 
-      *Card trick with* in **Angular 1**
+      Music Player in **Angular 2**
 
-      *Letterpress clone* in **Polymer**
-
-      *Music Player* in **Angular 2**
-
-      *Songwritter app* in **Vuejs**
+      Songwritter app in **Vuejs**
       
-      *Meme sharing app* in **React**
+      Meme sharing app in **React**
 
       ---
 
@@ -60,7 +58,7 @@
 
       ### 3. Demo time
       
-      ### 4. Progressive enhancement.
+      ### 4. Progressive enhancement
 
       ### 5. Improv JS Rock performance 🤘 🎸 🎸
 
@@ -70,106 +68,39 @@
 
       # What is a PWA?
 
-      *//How many familiar with PWAs?*
+      <!-- How many are familiar with PWAs? -->
 
-      TLWNR: *//too long will not read*
+      *TLWNR:*
       
-      * A progressive Web App is a web app that has been enhanced to improve the user experience
+      * A Progressive Web App is a web app that has been enhanced to improve the user experience
       *based on the app's context*.
 
       *Mr speaker, Could you say that again but like make it longer?*
 
       Sure,
 
-      * A Progressive Web App (PWA) is a web app that uses modern web capabilities to deliver an app-like experience to users.
-      These apps meet certain requirements (to be discussed), are deployed to servers, accessible through URLs, and indexed by search engines.
+      * A Progressive Web App (PWA) is a web app that uses modern web technlogies such as web app manifest, service workers and IndexedDB to deliver an experience that is fast, reliable and engaging.
+      A PWA is expected to harness the power of the platform it's on and gracefully adapt to situation changes such as loss of internet connection.
 
       ---
 
       class: middle
 
-      # Do you need to enhance your web app?
+      ## Should you progressively enhance your web app?
 
-      *To quote an annoying high school girl:* &nbsp;&nbsp; * DUHH!!!! * 🙄
+      *To quote an annoying high school girl:*&nbsp; **" DUHH!!!! 🙄"**
 
-      Not convinced yet? Well here is a list(*coz well....*)
+      Not convinced yet? Well here is a list(*coz well.....lists*)
 
+      1. Fast (*both in illusion and actuality*)
 
-      1. Fast (both in illusion and actuality)
+      1. Increased Engagement (*push notifications*)
 
-      1. Increased Engagement
-
-      1. Can feel native (Live on home screen, standalone)
+      1. Can feel native (*live on home screen and app launcher*)
       
       1. Can continue working offline
 
       1. Improved Conversions
-
-      ---
-
-      # Demo time
-
-      Flipkart progessive web app.
-
-      &nbsp;
-
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/RJ1h-GiRh1E?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-      ---
-
-      # Progressive Enhancement
-
-        ### Before you PWA
-        
-        Make your app smaller and faster...
-
-        1. Compress your images
-
-        1. Use smaller images with placeholders e.g. colors
-
-        1. Use SVG instead of font files when possible.
-
-        1. Use lightweight Loaders / state change notifiers
-
-        1. Don't use a framework to do a script or css file job
-
-        1. Minify your source files
-
-        1. Use web workers for long running tasks
-
-      ---
-
-      class: dark
-
-      ![Dial pad](images/dialpad.gif)
-
-      ---
-
-      ### Before you PWA cont...
-        
-      * Give your app a mobile feel (Think beyond links)
-
-        1. Add microinteractions.
-        
-        1. Use smooth state change transitions and animations.
-
-        1. Make interactions snappy and intuitive
-
-        1. Customize empty states screens
-        
-        1. Reward / encourage successfull interactions.
-
-        1. Feedback, feedback, feedback.
-
-      &nbsp;
-      
-      * Test your app with actual users
-
-        * Non technical friends, family
-      
-        &nbsp;
-
-      * Test your app in bad network conditions.
 
       ---
       
@@ -181,9 +112,132 @@
 
       1. App shell architecture
 
-      1. Web manifest file
+      1. Web App manifest
 
       1. Service Workers
+
+      1. IndexedDB
+
+      ---
+
+      class: center, middle
+
+      # Demo time
+
+      Flipkart progessive web app.
+
+      ---
+
+      class: full
+
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/RJ1h-GiRh1E?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+      ---
+
+      class: middle
+
+      # Progressive Enhancement
+
+        Obssesively tweak the little things that drive your app work really well.
+
+        * PWA technologies don't magically fix all your app's problems
+
+          * They build upon the existing experience
+
+          * First optimize your traditional wep app
+
+        * Not all PWA technologies work on every browser
+      
+      ---
+
+      class: middle
+
+        ### Before you PWA
+        
+        Make your app small:
+
+        * Compress and resize your images
+
+        * Use SVGs instead of font files when possible.
+
+        * Don't use a library or framework to do a script or css file job
+
+        * Minify your source files
+      
+      ---
+
+      class: middle
+
+        ### Before you PWA cont...
+
+
+        Make your app fast:
+
+        * Use placeholders until content loads *e.g. dominant color for images*
+
+        * Use **lightweight** loaders / state change notifiers
+
+        * Use alternative solutions to long tasks
+
+          * *One Click SignIn, Web Pay API*
+        
+        * Use web workers for memory intensive tasks
+
+      ---
+
+      class: dark
+
+      ![Dial pad](images/dialpad.gif)
+
+      ---
+
+      ### Before you PWA cont...
+        
+      Give your app a native feel (*think beyond links and pages*)
+
+        * Make your apps responsive (*like beyond media queries responsive*)
+
+        * Enhance user input ( *don't default to input boxes* )
+
+        * Add microinteractions
+        
+        * Make state changes smooth, snappy and intuitive (*transitions and animations*)
+
+        * Customize empty states screens and error screens (*e.g no network*)
+        
+        * Reward successfull interactions ( *nice message, graphic* )
+
+        * Use context links ( *tel: +255 7....*, *wa.me/155...?text=I'm int...* )
+
+        * Feedback, feedback, feedback
+      
+      ---
+
+      ### Before you PWA cont...
+      
+      * Test your app with actual users
+
+        * Non technical friends, family
+
+        * Give to small unit of target users
+
+      * Test and adapt your app to realistic network conditions
+
+        * Most users are probably on 3G or lower
+
+        * Use Cache API and IndexedDB for file and content caching
+
+        * Notify users on network state changes and give them options
+
+          * E.g. *Google search caches search queries, replays them when 
+          connections is next available then notifies user*
+
+      * Use analytics tools to track app usage
+
+        * Which features are never used 
+        (* hamburger menu for tz websites *)
+
+        * Experiment with unfamiliar interactions or content structure
       
       ---
 
