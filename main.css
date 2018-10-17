@@ -16,25 +16,6 @@
 }
 
 @font-face{
-  font-family: 'Ubuntu Mono';
-  src: url('fonts/UbuntuMono-Bold.ttf');
-  font-weight: bold;
-}
-
-@font-face{
-  font-family: 'Ubuntu Mono';
-  src: url('fonts/UbuntuMono-Italic.ttf');
-  font-style: italic;
-}
-
-@font-face{
-  font-family: 'Ubuntu Mono';
-  src: url('fonts/UbuntuMono-BoldItalic.ttf');
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face{
   font-family: 'Yanone Kaffeesatz';
   src: url('fonts/YanoneKaffeesatz-Regular.ttf');
   font-weight: normal;
@@ -42,6 +23,14 @@
 
 .full{
   padding: 0;
+}
+
+.to-reveal{
+  transition: opacity 0.35s ease-out cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.to-reveal:not(.visible){
+  opacity: 0;
 }
 
 /*SLIDES CSS*/
@@ -54,6 +43,11 @@
 
 .remark-slide-content{
   background-size: cover !important;
+}
+
+.a-slide:not(.dark):not(.full){
+  background-image: url('http://img.52jbj.com/uploads/allimg/160820/1-160R0113506.jpg');
+  background-position-y: -200px;
 }
 
 body { font-family: 'OpenSans'; }
@@ -91,4 +85,52 @@ h1, h2, h3 {
 .has-subitle h1 + p{
   font-size: 0.9em;
   opacity: 0.6;
+}
+
+
+#qrCodeViewer{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none
+}
+
+#qrCodeViewer.visible{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#qrCodeViewer > div{
+  /* width: 350px;
+  height: 400px; */
+  background: #fff;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 3em;
+}
+
+#qrCodeViewer h5{
+  font-family: 'Yanone Kaffeesatz';
+  font-weight: normal;
+  font-size: 2.2em;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+}
+
+#qrCode{
+  width: 250px;
+  height: 250px;
+  margin-bottom: 1.3em;
 }
